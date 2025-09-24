@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apaga Projects - Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; color: #333; background: #fff; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .header { background: linear-gradient(135deg, #00897B 0%, #43A047 100%); color: white; padding: 60px 40px; margin: -40px -20px 40px -20px; text-align: center; }
+    h1 { font-size: 2.5em; margin-bottom: 10px; font-weight: 700; }
+    .subtitle { font-size: 1.2em; opacity: 0.95; }
+    .section { margin-bottom: 50px; padding: 30px; background: #f8f9fa; border-radius: 10px; }
+    h2 { color: #00897B; margin-bottom: 20px; font-size: 1.8em; border-bottom: 2px solid #00897B; padding-bottom: 10px; }
+    h3 { color: #555; margin-top: 25px; margin-bottom: 15px; font-size: 1.3em; }
+    .key-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
+    .metric { background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .metric-value { font-size: 2em; font-weight: bold; color: #00897B; }
+    .metric-label { color: #777; margin-top: 5px; }
+    .persona-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 30px 0; }
+    .persona-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+    .persona-header { display: flex; align-items: center; margin-bottom: 20px; }
+    .persona-avatar { width: 60px; height: 60px; border-radius: 50%; margin-right: 15px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; color: white; }
+    .persona-yell { background: #EF5350; }
+    .persona-apaga { background: #42A5F5; }
+    .persona-both { background: #8E24AA; }
+    .persona-lead { background: #FFB300; }
+    .persona-info h4 { font-size: 1.3em; margin-bottom: 5px; }
+    .persona-role { color: #777; font-size: 0.9em; }
+    .persona-section { margin-bottom: 20px; }
+    .persona-section h5 { color: #00897B; margin-bottom: 8px; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
+    .persona-section ul { list-style: none; padding-left: 0; }
+    .persona-section li { padding: 5px 0; padding-left: 20px; position: relative; }
+    .persona-section li:before { content: "→"; position: absolute; left: 0; color: #00897B; }
+    .quote { background: #f0f4ff; padding: 15px; border-left: 4px solid #00897B; font-style: italic; margin: 20px 0; }
+    .journey-stages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 30px 0; }
+    .stage { background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .stage-title { font-weight: bold; color: #00897B; margin-bottom: 15px; font-size: 1.1em; }
+    .stage-items { text-align: left; font-size: 0.9em; color: #666; }
+    .recommendations { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+    .recommendation-item { padding: 15px; margin-bottom: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #00897B; }
+    .recommendation-title { font-weight: bold; color: #333; margin-bottom: 8px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 20px 0; }
+    .skill-tag { background: #e3f2fd; color: #1976d2; padding: 8px 15px; border-radius: 20px; text-align: center; font-size: 0.9em; }
+    .footer { text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #ddd; color: #777; }
+    @media (max-width: 768px) { .persona-grid, .journey-stages { grid-template-columns: 1fr; } .key-metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Apaga Projects</h1>
+      <div class="subtitle">Buyer Persona Research & Marketing Strategy</div>
+    </div>
+
+    <div class="section">
+      <h2>Executive Summary</h2>
+      <p><strong>Challenge:</strong> Understand and differentiate customer groups for <em>Yell Extreme Park</em> and <em>Apaga Resort</em> in Yenokavan, Armenia.</p>
+      <p style="margin-top: 15px;"><strong>Approach:</strong> Conducted 146 surveys, 20 in-depth interviews, and 3 days of on-site observations. Compared findings with Breavis and Grant Thornton reports. Validated personas via Facebook A/B testing.</p>
+      <div class="key-metrics">
+        <div class="metric"><div class="metric-value">146</div><div class="metric-label">Survey Respondents</div></div>
+        <div class="metric"><div class="metric-value">20</div><div class="metric-label">In-Depth Interviews</div></div>
+        <div class="metric"><div class="metric-value">3</div><div class="metric-label">Observation Days</div></div>
+        <div class="metric"><div class="metric-value">4</div><div class="metric-label">Buyer Personas</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Buyer Personas</h2>
+      <div class="persona-grid">
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-avatar persona-yell">Y</div>
+            <div class="persona-info"><h4>Yell Explorer</h4><div class="persona-role">Extreme Adventure Seeker</div></div>
+          </div>
+          <div class="persona-section"><h5>Profile</h5><ul><li>15–35 years old</li><li>Couples & friends</li><li>Physically active, thrill lovers</li></ul></div>
+          <div class="persona-section"><h5>Pain Points</h5><ul><li>Security concerns</li><li>Not loyal/returning</li></ul></div>
+        </div>
+
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-avatar persona-apaga">A</div>
+            <div class="persona-info"><h4>Apaga Guest</h4><div class="persona-role">Family & Nature Lover</div></div>
+          </div>
+          <div class="persona-section"><h5>Profile</h5><ul><li>25+ years old</li><li>Families with kids</li><li>Value relaxation & healthy food</li></ul></div>
+          <div class="persona-section"><h5>Pain Points</h5><ul><li>Limited dining & evening options</li><li>Road quality</li></ul></div>
+        </div>
+
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-avatar persona-both">B</div>
+            <div class="persona-info"><h4>Unified Visitor</h4><div class="persona-role">Enjoys Both Yell & Apaga</div></div>
+          </div>
+          <div class="persona-section"><h5>Profile</h5><ul><li>15–45 years old</li><li>Friends or families</li><li>Nature & socialization focused</li></ul></div>
+          <div class="persona-section"><h5>Pain Points</h5><ul><li>Service quality in Armenia</li></ul></div>
+        </div>
+
+        <div class="persona-card">
+          <div class="persona-header">
+            <div class="persona-avatar persona-lead">L</div>
+            <div class="persona-info"><h4>Potential Lead</h4><div class="persona-role">Interested but Not Yet Customer</div></div>
+          </div>
+          <div class="persona-section"><h5>Profile</h5><ul><li>High-income Yerevan residents</li><li>Follow ads & word-of-mouth</li></ul></div>
+          <div class="persona-section"><h5>Pain Points</h5><ul><li>Need strong brand awareness</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Buyer Journey Mapping</h2>
+      <div class="journey-stages">
+        <div class="stage"><div class="stage-title">AWARENESS</div><div class="stage-items">• Social Media Ads<br>• Influencer Endorsements<br>• SEO on "Yenokavan" travel<br>• Travel Blogs</div></div>
+        <div class="stage"><div class="stage-title">CONSIDERATION</div><div class="stage-items">• Booking.com presence<br>• Facebook Community<br>• University & Corporate Workshops<br>• TripAdvisor Reviews</div></div>
+        <div class="stage"><div class="stage-title">DECISION</div><div class="stage-items">• Loyalty Programs<br>• Corporate Packages<br>• Free Trial Activities (zipline)<br>• Seasonal Promotions</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Recommendations</h2>
+      <div class="recommendations">
+        <div class="recommendation-item"><div class="recommendation-title">Separate Strategies</div><div>Design distinct marketing for Yell (extreme seekers) and Apaga (families & relaxation).</div></div>
+        <div class="recommendation-item"><div class="recommendation-title">Branding & Awareness</div><div>Redesign Apaga Resort logo, enhance online presence in Armenian, English, Russian.</div></div>
+        <div class="recommendation-item"><div class="recommendation-title">Infrastructure</div><div>Improve roads, add pool, kids’ zone, and evening activities.</div></div>
+        <div class="recommendation-item"><div class="recommendation-title">Customer Loyalty</div><div>Launch loyalty cards, seasonal campaigns, and influencer collaborations.</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>PMM Skills Demonstrated</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">Survey Research</div>
+        <div class="skill-tag">Persona Development</div>
+        <div class="skill-tag">Market Segmentation</div>
+        <div class="skill-tag">Journey Mapping</div>
+        <div class="skill-tag">Competitive Analysis</div>
+        <div class="skill-tag">A/B Testing</div>
+        <div class="skill-tag">Brand Strategy</div>
+        <div class="skill-tag">Tourism Marketing</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Research conducted as part of Apaga Projects Buyer Persona Study</p>
+      <p style="margin-top: 10px; font-size: 0.9em;">Team: Marat Khachatryan, Artak Chibukhchyan, Tigran Chibukhchyan, Gayane Chibukhchyan, and colleagues</p>
+    </div>
+  </div>
+</body>
+</html>
